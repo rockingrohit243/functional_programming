@@ -29,8 +29,6 @@ public class CollectionSortWithoutLambda {
         arrayList.add(8);
         Collections.sort(arrayList,new CollectionSort1());
         System.out.println(arrayList);
-        arrayList.stream().forEach(System.out::println);
-        List<Integer> list=arrayList.stream().filter(i->i%2==0).collect(Collectors.toList());
-        System.out.println(list);
+
     }
 }
